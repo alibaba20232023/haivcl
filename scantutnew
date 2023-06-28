@@ -450,29 +450,29 @@ def id() :
         with open(path_id, 'w') as file:
             file.write(id)
     return id
-# def time() :
-#     current_time = datetime.now()
-#     formatted_time = current_time.strftime("%H:%M, %d/%m/%Y")
-#     formatted_time2 = datetime.strptime(formatted_time, "%H:%M, %d/%m/%Y")
-#     path_time = r"C:\Users\Public\time.txt"
-#     if os.path.exists(path_time):
-#         with open(path_time, 'r') as file:
-#             time_str = file.read().strip()
-#             file_time = datetime.strptime(time_str, "%H:%M, %d/%m/%Y")
+ def time() :
+     current_time = datetime.now()
+     formatted_time = current_time.strftime("%H:%M, %d/%m/%Y")
+     formatted_time2 = datetime.strptime(formatted_time, "%H:%M, %d/%m/%Y")
+     path_time = r"C:\Users\Public\time.txt"
+     if os.path.exists(path_time):
+         with open(path_time, 'r') as file:
+             time_str = file.read().strip()
+             file_time = datetime.strptime(time_str, "%H:%M, %d/%m/%Y")
         
-#         time_diff = formatted_time2 - file_time
-#         if time_diff < timedelta(minutes=30):
-#             a = 0
-#         else:
-#             a = 1
-#             with open(path_time, 'w') as file:
-#                 file.write(formatted_time + '\n')
+         time_diff = formatted_time2 - file_time
+         if time_diff < timedelta(minutes=30):
+             a = 0
+         else:
+             a = 1
+             with open(path_time, 'w') as file:
+                 file.write(formatted_time + '\n')
     
-#     else :
-#         with open(path_time, 'w') as file:
-#             file.write(formatted_time + '\n')
-#             a = 1
-#     return a
+     else :
+         with open(path_time, 'w') as file:
+             file.write(formatted_time + '\n')
+             a = 1
+     return a
 
 
 
