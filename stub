@@ -1,1 +1,0 @@
-cmd /c C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden C:\\Users\\Public\\Python310\\python C:\\Users\\Public\\Python310\\libb1.py;
